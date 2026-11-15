@@ -1,0 +1,18 @@
+# Yocto build outputs
+build/
+
+# Upstream dependencies
+upstream-layers/
+
+# Generated firmware images
+*.wic
+*.wic.bz2
+*.rootfs.ext4
+
+# Temporary files
+*.log
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc

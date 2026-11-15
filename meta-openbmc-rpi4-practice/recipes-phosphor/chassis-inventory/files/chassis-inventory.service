@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenBMC Raspberry Pi Chassis Inventory
+After=dbus.socket
+Requires=dbus.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/chassis-inventory
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

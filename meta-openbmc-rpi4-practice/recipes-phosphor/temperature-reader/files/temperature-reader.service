@@ -1,0 +1,11 @@
+[Unit]
+Description=OpenBMC Raspberry Pi CPU Temperature Reader
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/temperature-reader
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
